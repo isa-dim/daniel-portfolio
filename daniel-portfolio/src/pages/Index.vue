@@ -1,11 +1,6 @@
-<template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
-  </q-page>
+<template lang="pug">
+div
+  p this is a test
 </template>
 
 <script>
@@ -15,5 +10,6 @@ export default defineComponent({
   name: 'PageIndex'
 })
 </script>
+
 <style media="screen" scoped lang="sass">
 </style>
