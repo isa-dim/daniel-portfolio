@@ -9,6 +9,7 @@ div.flex.justify-between.q-ma-lg
 
 <script>
 export default {
+  name: 'NaviDesktop'
 }
 </script>
 
