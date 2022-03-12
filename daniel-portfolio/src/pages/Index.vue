@@ -1,6 +1,9 @@
 <template lang="pug">
-div
-  p this is a test
+div.row.test.window-height
+  div.col-6
+    p daniel cortes
+  div.right-item.col-6
+    p isabela
 </template>
 
 <script>
@@ -12,4 +15,7 @@ export default defineComponent({
 </script>
 
 <style media="screen" scoped lang="sass">
+.right-item
+  background: white
+  color: $dc-green
 </style>

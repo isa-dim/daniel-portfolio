@@ -1,8 +1,7 @@
 <template lang="pug">
-NaviDesktop
+//NaviDesktop
 div
   router-view
-
 </template>
 
 <script>
