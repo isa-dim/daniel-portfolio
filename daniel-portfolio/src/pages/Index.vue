@@ -1,16 +1,20 @@
 <template lang="pug">
 div.row.test.window-height
   div.col-6
-    p daniel cortes
+    NaviMain
+    h3.titulo.q-pa-lg Film student with a love for images & stories
   div.right-item.col-6
-    p isabela
+    TableElement
 </template>
 
 <script>
 import { defineComponent } from 'vue'
+import NaviMain from 'components/NaviMain'
+import TableElement from 'components/TableElement'
 
 export default defineComponent({
-  name: 'PageIndex'
+  name: 'PageIndex',
+  components: { NaviMain, TableElement }
 })
 </script>
 
@@ -18,4 +22,6 @@ export default defineComponent({
 .right-item
   background: white
   color: $dc-green
+.titulo
+  max-width: 400px
 </style>

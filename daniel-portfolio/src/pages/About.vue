@@ -1,6 +1,7 @@
 <template lang="pug">
+NaviDesktop
 div.q-ma-lg.q-pt-lg(:class="[$q.screen.lt.md ? 'q-mb-md' : 'max-width']")
-  h5.q-pb-lg I'm Daniel Cortés, a Germany based graphic designer and developer working on projects in fields ranging from identity, print, editorial design and art direction to websites and interactive design for businesses, individuals and cultural institutions.
+  h5.q-pb-lg I'm Daniel Cortés, a Germany based Colombian film student with a love for documentary, images & stories of all kinds. Currently looking for an internship or a job opportunity.
   h5 Please contact me if you'd like to discuss a project.
   div.q-mb-lg(v-for="item in infos")
     p {{ item.title }}
@@ -12,8 +13,11 @@ div.q-ma-lg.q-pt-lg(:class="[$q.screen.lt.md ? 'q-mb-md' : 'max-width']")
 </template>
 
 <script>
+import NaviDesktop from 'components/NaviDesktop'
+
 export default {
   name: 'About',
+  components: { NaviDesktop },
   data () {
     return {
       infos: {
