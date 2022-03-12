@@ -3,7 +3,7 @@ div.flex.test.window-height(:class="[$q.screen.lt.md ? 'column' : 'row']")
   div.left-item.full
     NaviMain
     h3.titulo.q-pa-lg(ref="text" @scroll="onScroll") Film student with a love for images & stories
-    ColorBtn(@click="showColorBtn = false")
+    ColorBtn
   div.right-item.window-height
     TableElement(
       v-for="project in projects"
@@ -33,7 +33,7 @@ export default defineComponent({
         {
           title: 'Spain',
           category: 'Photography Series',
-          year: '2021'
+          year: '2020'
         },
         {
           title: 'Portraits',
