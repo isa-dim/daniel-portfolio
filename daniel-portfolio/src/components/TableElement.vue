@@ -1,6 +1,6 @@
 <template lang="pug">
 div.q-ma-md
-  div.flex.justify-between.border.q-pt-md
+  div.flex.justify-between.border.q-pt-md.mono
     p first
     p second
     p last
@@ -15,4 +15,7 @@ export default {
 <style lang="sass" scoped>
 .border
   border-top: 1px solid $dc-green
+.mono
+  font-family: IBMPlexMono-Regular
+  font-size: .7rem
 </style>
