@@ -1,14 +1,15 @@
 <template lang="pug">
-div.q-ma-md
+div.q-mx-lg
   div.flex.justify-between.border.q-pt-md.mono
-    p first
-    p second
-    p last
-  div.border
+    p {{ title }}
+    p {{ category }}
+    p {{ year }}
 </template>
 
 <script>
 export default {
+  name: 'TableElement',
+  props: ['title', 'category', 'year']
 }
 </script>
 
