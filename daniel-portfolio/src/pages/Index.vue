@@ -1,9 +1,9 @@
 <template lang="pug">
-div.row.test.window-height
-  div.col-6
+div.flex.test.window-height(:class="[$q.screen.lt.md ? 'column' : 'row']")
+  div.left-item
     NaviMain
     h3.titulo.q-pa-lg Film student with a love for images & stories
-  div.right-item.col-6
+  div.right-item.window-height
     TableElement
 </template>
 
@@ -18,10 +18,18 @@ export default defineComponent({
 })
 </script>
 
-<style media="screen" scoped lang="sass">
+<style  scoped lang="sass">
 .right-item
   background: white
   color: $dc-green
+  flex: 1
+
+.left-item
+  flex: 1
+
+// .right-item
+//     body.screen--xs &
+//       visibility: hidden
 .titulo
-  max-width: 400px
+  max-width: 9.5em
 </style>
