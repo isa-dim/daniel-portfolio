@@ -5,6 +5,9 @@ div.flex.test.window-height(:class="[$q.screen.lt.md ? 'column' : 'row']")
     h3.titulo.q-pa-lg(ref="text" @scroll="onScroll") Film student with a love for images & stories
     ColorBtn
     DcImage
+    DcImage
+    DcImage
+    DcImage
   div.right-item.window-height
     div.sticky
       TableElement(
