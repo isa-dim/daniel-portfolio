@@ -1,6 +1,6 @@
 <template lang="pug">
 div.q-mx-lg
-  div.flex.justify-between.border.q-pt-md.mono
+  div.table-style.flex.justify-between.border.q-pt-md.mono.positioning
     p {{ title }}
     p {{ category }}
     p {{ year }}
@@ -19,4 +19,9 @@ export default {
 .mono
   font-family: IBMPlexMono-Regular
   font-size: .7rem
+.positioning
+  position: absolute
+  bottom: 0
+.table-style
+  width: 95%
 </style>
