@@ -1,25 +1,9 @@
-<template>
-  <div class="fullscreen bg-blue text-white text-center q-pa-md flex flex-center body--blue">
-    <div>
-      <div style="font-size: 30vh">
-        404
-      </div>
-
-      <div class="text-h2" style="opacity:.4">
-        Oops. Nothing here...
-      </div>
-
-      <q-btn
-        class="q-mt-xl"
-        color="white"
-        text-color="blue"
-        unelevated
-        to="/"
-        label="Go Home"
-        no-caps
-      />
-    </div>
-  </div>
+<template lang="pug">
+div.row
+  div.col-md-6.col-12
+    div.left
+  div.col-md-6.col-12
+    div.right
 </template>
 
 <script>
@@ -29,3 +13,10 @@ export default defineComponent({
   name: 'Error404'
 })
 </script>
+
+<style lang="sass">
+.left
+  background-color: red
+.right
+  background-color: blue
+</style>
