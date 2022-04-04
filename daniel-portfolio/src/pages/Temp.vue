@@ -1,25 +1,26 @@
 <template lang="pug">
-//left container
-div.left-item.flex.column.caudex
-  p.q-mt-lg Daniel Cortés
-  h3.titulo Film student with a love for images & stories
-  div.q-mb-lg.circle-filled
-//right container
-div.right-item.window-height
-  div.sticky.q-ma-lg
-    h5.caudex-light.q-pb-lg I'm Daniel Cortés, a Germany based Colombian film student with a love for documentary, images & stories of all kinds. Currently looking for an internship or a job opportunity.
-    h5.caudex-light Please contact me if you'd like to discuss a project.
-    div.q-my-lg
-      p E-Mail
-      a.caudex-light.text-h5(href="mailto:info@daniel-cortes.com" target="_blank" rel="noopener noreferrer") info@daniel-cortes.com
-    div.q-my-lg.flex.column
-      p Portfolio
-      a.caudex-light.text-h5(href="https://instagram.com/danielotecortes" target="_blank" rel="noopener noreferrer") Instagram
-      a.caudex-light.text-h5(href="https://vimeo.com/user116307814" target="_blank" rel="noopener noreferrer") Vimeo
-    q-img.q-my-xl(
-      :src="bw"
-      fit="cover"
-      style="height: 350px; max-width: 20rem")
+div.row
+  //left container
+  div.col-md-6.col-12.left-item.flex.column.caudex
+    p.q-mt-lg Daniel Cortés
+    h3.titulo Film student with a love for images & stories
+    div.q-mb-lg.circle-filled
+  //right container
+  div.col-md-6.col-12.right-item
+    div.q-ma-lg
+      h5.caudex-light.q-pb-lg I'm Daniel Cortés, a Germany based Colombian film student with a love for documentary, images & stories of all kinds. Currently looking for an internship or a job opportunity.
+      h5.caudex-light Please contact me if you'd like to discuss a project.
+      div.q-my-lg
+        p E-Mail
+        a.caudex-light.text-h5(href="mailto:info@daniel-cortes.com" target="_blank" rel="noopener noreferrer") info@daniel-cortes.com
+      div.q-my-lg.flex.column
+        p Portfolio
+        a.caudex-light.text-h5(href="https://instagram.com/danielotecortes" target="_blank" rel="noopener noreferrer") Instagram
+        a.caudex-light.text-h5(href="https://vimeo.com/user116307814" target="_blank" rel="noopener noreferrer") Vimeo
+      q-img.q-my-xl(
+        :src="bw"
+        fit="cover"
+        style="height: 350px; max-width: 20rem")
 </template>
 
 <script>
@@ -51,22 +52,17 @@ export default defineComponent({
   background: white
   color: $dc-green
   flex: 1
-  position: fixed
+  // position: fixed
   z-index: 1
   overflow-y: scroll
   top: 0
   right: 0
   height: 100vh
-  width: 50%
 .left-item
-  width: 50%
-  flex: 1
   height: 100vh
   display: flex
   align-items: center
   justify-content: space-between
-.sticky-mobile
-  width: 100vh
 .titulo
   max-width: 25rem
   text-align: center
