@@ -11,14 +11,15 @@ div.right-item.window-height
     h5.caudex-light Please contact me if you'd like to discuss a project.
     div.q-my-lg
       p E-Mail
-      h5.caudex-light info@danielcortes.com
-    div.q-my-lg
+      a.caudex-light.text-h5(href="mailto:info@daniel-cortes.com" target="_blank" rel="noopener noreferrer") info@daniel-cortes.com
+    div.q-my-lg.flex.column
       p Portfolio
-      h5.caudex-light Instagram
+      a.caudex-light.text-h5(href="https://instagram.com/danielotecortes" target="_blank" rel="noopener noreferrer") Instagram
+      a.caudex-light.text-h5(href="https://vimeo.com/user116307814" target="_blank" rel="noopener noreferrer") Vimeo
     q-img.q-my-xl(
       src="images/Daniel-Cortes-sw.jpeg"
       fit="cover"
-      style="height: 250px; max-width: 20rem")
+      style="height: 350px; max-width: 20rem")
 </template>
 
 <script>
@@ -46,6 +47,7 @@ export default defineComponent({
   flex: 1
   position: fixed
   z-index: 1
+  overflow-y: scroll
   top: 0
   right: 0
   height: 100vh
@@ -70,8 +72,12 @@ export default defineComponent({
 .border
   border: 1px solid red
 .circle-filled
-  height: 20px
-  width: 20px
+  height: 15px
+  width: 15px
   border-radius: 50px
   background-color: white
+a
+  color: $dc-green
+a:hover
+  text-decoration: underline
 </style>
