@@ -1,5 +1,5 @@
 <template lang="pug">
-div.row
+//div.row
   div.col-md-6.col-12.left
     div.left-item.flex.column.caudex
       p.q-mt-lg Daniel Cortés
