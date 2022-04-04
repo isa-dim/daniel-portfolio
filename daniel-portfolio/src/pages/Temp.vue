@@ -17,7 +17,7 @@ div.right-item.window-height
       a.caudex-light.text-h5(href="https://instagram.com/danielotecortes" target="_blank" rel="noopener noreferrer") Instagram
       a.caudex-light.text-h5(href="https://vimeo.com/user116307814" target="_blank" rel="noopener noreferrer") Vimeo
     q-img.q-my-xl(
-      src="images/Daniel-Cortes-sw.jpeg"
+      :src="bw"
       fit="cover"
       style="height: 350px; max-width: 20rem")
 </template>
@@ -35,6 +35,12 @@ export default defineComponent({
   methods: {
     onScroll () {
       console.log('hey')
+    }
+  },
+  data () {
+    return {
+      bw: 'images/Daniel-Cortes-sw.jpeg',
+      color: 'images/Daniel-Cortes-fb.jpeg'
     }
   }
 })
